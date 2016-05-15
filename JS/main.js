@@ -29,6 +29,7 @@ require(['jquery','window'],function($,w){
        }).on('close',function(){
            alert('the second close handler');
        });
+
        win.on('alert',function(){
            alert('the third alert handler');
        });
