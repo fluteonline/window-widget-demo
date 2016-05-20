@@ -49,7 +49,7 @@ define(['widget','jquery','jqueryUI'],function(widget,$,$UI){
             this.boundingBox.appendTo(document.body);
         },
         bindUI : function(){
-            that = this;
+            var that = this;
             this.boundingBox.delegate('.window_alertBtn','click',function(){
                 that.fire('alert');
                 that.destroy();
