@@ -73,7 +73,7 @@ define(['widget','jquery','jqueryUI'],function(widget,$,$UI){
                 that.fire('cancel');
                 that.destroy();
             }).delegate('.window_promptBtn','click',function(){
-                that.fire('prompt',that._promptInput.val());
+                that.fire('prompt', that._promptInput.val());
                 that.destroy();
             });
             if(this.cfg.handler4AlertBtn){
