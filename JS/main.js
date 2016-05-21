@@ -46,4 +46,24 @@ require(['jquery','window'],function($,w){
            alert('取消');
        });
     });
+
+    $('#c').click(function(){
+       new w.Window().prompt({
+           title:'请输入您的名字',
+           content:'我们将会为您保密您输入的信息。',
+           width:300,
+           height:150,
+           y:50,
+           text4PromptBtn:'输入',
+           text4CancelBtn:'取消',
+           defaultValue4PromptInput:'张三',
+           dragHandle:'.window_header',
+           handler4PromptBtn:function(inputValue){
+               alert('您输入的内容是：' + inputValue);
+           },
+           handler4CancelBtn:function(){
+               alert('取消');
+           }
+       });
+    });
 });
